@@ -1,0 +1,138 @@
+#calc-cover {
+    /*Alinear al centro*/
+    margin: 0 auto;
+    background-image: url(/images/giyuu.png);
+    background-size: 130px;
+    background-position-y: 40px;
+    background-position-x: 270px;
+    background-repeat: no-repeat;
+
+    background-color: rgb(198, 202, 250);
+    border: 2px solid gray;
+    border-radius: 30px;
+    width: 400px;
+    height: 320px;
+}
+
+#display {
+    margin-top: 15px;
+    margin-left: 16px;
+    height: 55px;
+    width: 240px;
+    border: 2px solid gray;
+    
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 250px;
+    height: 210px;
+    margin-left: 14px;
+    margin-top: 15px;
+}
+
+/*Botones*/
+
+/*Estados: botones regulares*/
+
+.btn {
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    border: 1px solid gray;
+    background-color: rgb(115, 239, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:active {
+    border: 1px solid gray;
+    background-color: rgb(139, 179, 184);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Estados: botón clear*/
+.clear {
+    background-color: rgb(169, 21, 21);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.clear:hover {
+    background-color: rgb(252, 67, 67);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.clear:active {
+    background-color: rgb(149, 56, 56);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*Estados: botón de igual*/
+
+.equals {
+    grid-row: span 2;
+    background-color: rgb(19, 19, 126);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.equals:hover {
+    grid-row: span 2;
+    background-color: rgb(99, 99, 232);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.equals:active {
+    grid-row: span 2;
+    background-color: rgb(72, 72, 118);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#menu {
+    margin-left: 1.5vw;
+    display: none;
+}
+
+.btn-menu {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn-menu:hover {
+    border: 1px solid gray;
+    background-color: rgb(115, 239, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-menu:active {
+    border: 1px solid gray;
+    background-color: rgb(139, 179, 184);
+    border-radius: 10px;
+    cursor: pointer;
+}

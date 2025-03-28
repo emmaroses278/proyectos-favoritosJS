@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <!--Contenedor principal (carcasa de la calculadora)-->
+    <div id="calc-cover">
+        <div id="display-div">
+            <input type="text" id="display" placeholder="Ingrese un número">
+        </div>       
+
+        <!--Menú de memoria-->
+        <div id="menu">
+            <ul>
+                <button class="btn-menu" onclick="saveDisplay()" id="guardar-button">Guardar</button>
+                <button class="btn-menu" onclick="seeHistory()" id="historial-button">Recorrer historial</button>
+            </ul>
+        </div>
+
+        <div class="buttons-grid">
+            <!--Primera fila de botones-->
+            <button class="clear" onclick="clearAll()" id="clear-button">C</button>
+            <button class="btn" onclick="deleteLast()" id="backspace-button">&#8592</button>
+            <button class="btn" onclick="appendParenthesis('(')" id="Oparenthesis-button">(</button>
+            <button class="btn" onclick="appendParenthesis(')')" id="Cparenthesis-button">)</button>
+
+            <!-- Botón de Memoria -->
+            <button class="btn" onclick="pressMemory()" id="memory-button">Memoria</button>
+
+            <!--Segunda fila de botones-->
+            <button class="btn" onclick="appendNumber('7')" id="seven-button">7</button>
+            <button class="btn" onclick="appendNumber('8')" id="eight-button">8</button>
+            <button class="btn" onclick="appendNumber('9')" id="nine-button">9</button>
+            <button class="btn" onclick="appendOperation('/')" id="divide-button">/</button>
+            <button class="btn" onclick="appendOperation('√')" id="sqrt-button">√</button>
+            
+            <!--Tercera fila de botones-->
+            <button class="btn" onclick="appendNumber('4')" id="four-button">4</button>
+            <button class="btn" onclick="appendNumber('5')" id="five-button">5</button>
+            <button class="btn" onclick="appendNumber('6')" id="six-button">6</button>
+            <button class="btn" onclick="appendOperation('*')" id="multiply-button">*</button>
+            <button class="btn" onclick="appendSquare('²')" id="square-button">(x)²</button>
+
+            <!--Cuarta fila de botones-->
+            <button class="btn" onclick="appendNumber('1')" id="one-button">1</button>
+            <button class="btn" onclick="appendNumber('2')" id="two-button">2</button>
+            <button class="btn" onclick="appendNumber('3')" id="three-button">3</button>
+            <button class="btn" onclick="appendOperation('-')" id="minus-button">-</button>
+            <button class="equals" onclick="equalTo()" id="equals-button">=</button>
+
+            <!--Quinta fila de botones-->
+            <button class="btn" onclick="appendNumber('0')" id="zero-button">0</button>
+            <button class="btn" onclick="appendNumber('.')" id="point-button">.</button>
+            <button class="btn" onclick="appendOperation('%')" id="percent-button">%</button>
+            <button class="btn" onclick="appendOperation('+')" id="plus-button">+</button>
+
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
